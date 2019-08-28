@@ -1,0 +1,19 @@
+{
+  "name": "stackoverflow-typescript-go-to-definition",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "clear": "rimraf **/dist",
+    "bootstrap": "yarn install && yarn run build",
+    "tsc": "tsc",
+    "build": "tsc --build",
+    "build:watch": "tsc --build --watch"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0",
+    "typescript": "^3.5.3"
+  }
+}
